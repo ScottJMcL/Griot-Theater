@@ -95,20 +95,48 @@ nav {
 #shows {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content:center; */
     flex-direction: column;
 }
 
 .show-list {
+    /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
     list-style: none;
     align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.raisin-image {
+    /* margin: 5px; */
+    /* width: 100%; */
 }
 
 .show {
     display: flex;
     flex-direction: row;
     list-style: none;
-    align-items: center;
+    padding: 5px;
+    margin: 0px;
+}
+
+/* #show-details {
+    padding: 5px;
+    margin: 10px;
+} */
+
+#raisin-button {
+    background-color: goldenrod;
+    height: 50px;
+    width: 200px;
+    align-self: center;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.raisin-button-text {
+    text-decoration: none;
+    color: white;
 }
