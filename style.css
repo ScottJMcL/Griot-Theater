@@ -1,5 +1,5 @@
 * {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     font-family: Roboto; 
 }
 
@@ -7,7 +7,7 @@
     font-family: 'Roboto';
     font-style:normal;
     font-weight: 200;
-    src: static/roboto; /* Not correct source? */
+    src: static/roboto; /* Not correct source? Seems to work though. */
   }
 
 body {
@@ -64,7 +64,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     margin: 0px;
-    padding: 0px;
 }
 
 .background {
@@ -72,19 +71,21 @@ nav {
     width: 100%;
 }
 
-#featured {  /* Not displaying in front of background */
+#featured {
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    align-self: center;
     margin: 0px;
-    display: flex;
+    position: absolute; /* Needed to have text on top of background */
+    color: white;
 }
 
 #month {
     border: 1px solid gray;
     background-color: lightgray;
-    width: 75%;
+    width: 66%;
     height: 20px;
     display: flex;
     align-items: center;
@@ -95,23 +96,16 @@ nav {
 #shows {
     display: flex;
     align-items: center;
-    /* justify-content:center; */
     flex-direction: column;
 }
 
 .show-list {
-    /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
     list-style: none;
     align-items: center;
-    padding: 0px;
-    margin: 0px;
-}
-
-.raisin-image {
-    /* margin: 5px; */
-    /* width: 100%; */
+    padding: 5px;
+    margin: 5px;
 }
 
 .show {
@@ -119,13 +113,13 @@ nav {
     flex-direction: row;
     list-style: none;
     padding: 5px;
-    margin: 0px;
+    margin: 10px;
 }
 
-/* #show-details {
+#show-details {
     padding: 5px;
     margin: 10px;
-} */
+}
 
 #raisin-button {
     background-color: goldenrod;
@@ -139,4 +133,48 @@ nav {
 .raisin-button-text {
     text-decoration: none;
     color: white;
+}
+
+.bottom {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.map {
+    align-self: center;
+}
+
+.mapimg {
+    width: auto;
+    height: 250px;
+}
+
+.fab {
+    color:white;
+    text-decoration: none;
+}
+
+.tiny {
+    color: white;
+    text-decoration: none;
+    font-size: small;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.fas{
+    color:darkgoldenrod;
+    font-size: x-large;
+}
+
+.far{
+    color:darkgoldenrod;
+    font-size: x-large;
 }
